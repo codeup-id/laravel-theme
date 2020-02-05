@@ -58,7 +58,7 @@ class Theme implements ThemeContract
     /**
      * Asset.
      *
-     * @var \LaravelUP\Assets
+     * @var Asset
      */
     protected $asset;
 
@@ -978,6 +978,9 @@ class Theme implements ThemeContract
         $layout = ucfirst($this->layout);
 
         // Fire event global assets.
+        $this->fire('assetGlobal', $this->asset);
+
+        // Fire theme config asset
         $this->fire('asset', $this->asset);
 
         // Fire event before render theme.
