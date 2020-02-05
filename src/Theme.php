@@ -184,11 +184,11 @@ class Theme implements ThemeContract
 
         $this->breadcrumb = $breadcrumb;
 
-        //$this->theme = $this->getConfig('themeDefault');
-        $this->theme($this->getConfig('themeDefault'));
+        $this->theme = $this->getConfig('themeDefault');
+//        $this->theme($this->getConfig('themeDefault'));
 
-        //$this->layout = $this->getConfig('layoutDefault');
-        $this->layout($this->getConfig('layoutDefault'));
+        $this->layout = $this->getConfig('layoutDefault');
+//        $this->layout($this->getConfig('layoutDefault'));
 
         $this->compilers['blade'] = new BladeCompiler($files, 'theme');
 

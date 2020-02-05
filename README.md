@@ -2,7 +2,7 @@
 
 Laravel-Theme is a theme management for Laravel 5+, it is the easiest way to organize your skins, layouts and assets.
 
-This package is based on [teepluss\theme](https://github.com/teepluss/laravel-theme/)
+This package is based on [teepluss\theme](https://github.com/FaCuZ/laravel-theme/)
 
 >##### Differences with teepluss version:
 >- Compatible with laravel 5.4+.
