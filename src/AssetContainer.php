@@ -207,11 +207,12 @@ class AssetContainer {
     /**
      * Alias add an asset to container.
      *
-     * @param string $name
+     * @param string|array $name
      * @param string $source
-     * @param array  $dependencies
-     * @param array  $attributes
-     * @return AssetContainer 
+     * @param array $dependencies
+     * @param array $attributes
+     * @return AssetContainer
+     * @throws \ErrorException
      */
     public function add($name, $source = null, $dependencies = array(), $attributes = array())
     {
